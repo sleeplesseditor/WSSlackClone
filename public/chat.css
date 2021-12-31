@@ -1,0 +1,48 @@
+input {
+    height: 35px;
+}
+
+#message-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#messages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+    background: #eee;
+}
+
+#user-message {
+    width: 33%;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#message-send {
+    color: #fff;
+    background-color: rgb(214, 1, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-left: 1rem;
+}
+
+#message-send:hover {
+    background-color: rgb(252, 40, 40);
+}
