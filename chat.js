@@ -16,3 +16,8 @@ io.on('connection', (socket) => {
         io.emit('messageToClients', {text: msg.text});
     });
 });
+
+io.of('/admin').on('connection', (socket) => {
+    console.log('Connected to Admin NameSpace');
+    io.of('/admin').emit('welcome', 'Welcome to Admin Channel');
+});
